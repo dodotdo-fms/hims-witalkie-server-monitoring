@@ -27,10 +27,10 @@ make
 ifdev
 :    패킷을 주고받게 될 이더넷의 이름
 
-signal-port (기본값: 0)
+signal-port (기본값: 4000)
 :    모니터링할 TCP 포트(0 == 모니터링 하지 않음)
 
-audio-port (기본값: 0)
+audio-port (기본값: 4001)
 :    모니터링할 UDP 포트(0 == 모니터링 하지 않음)
 
 ### 설치된 이더넷 목록 출력
@@ -43,7 +43,7 @@ $ sudo hims-packet-monitor
 ### 사용예
 
 ```bash
-$ sidp hims-packet-monitor eth0 4000 4001
+$ sudo hims-packet-monitor eth0 4000 4001
 ```
 
 eth0 이더넷에서 signal-port(4000), audio-port(4001) 을 대기하고 주고받는 패킷의 이름을 화면에 표시합니다.
